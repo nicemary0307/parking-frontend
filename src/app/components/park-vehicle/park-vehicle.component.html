@@ -1,0 +1,46 @@
+<div class="form-container">
+  <h2 class="form-title"> Park Your Vehicle</h2>
+
+  <form (ngSubmit)="parkVehicle()" class="parking-form">
+    <table>
+      <tr>
+        <td><label for="vehicleNumber">Vehicle Number:</label></td>
+        <td>
+          <input 
+            id="vehicleNumber"
+            [(ngModel)]="vehicleNumber" 
+            name="vehicleNumber" 
+            required 
+            placeholder="Enter vehicle number"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="userId">User ID:</label></td>
+        <td>
+          <input 
+            id="userId"
+            [(ngModel)]="userId" 
+            name="userId" 
+            required 
+            placeholder="Enter your user ID"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="parkingSpotId">Parking Spot ID:</label></td>
+        <td>
+          <input 
+            id="parkingSpotId"
+            [(ngModel)]="parkingSpotId" 
+            name="parkingSpotId" 
+            required 
+            placeholder="Enter parking spot ID"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <button type="submit"> Park Vehicle</button>
+  </form>
+</div>

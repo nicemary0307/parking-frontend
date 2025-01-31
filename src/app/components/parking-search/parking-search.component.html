@@ -1,0 +1,14 @@
+
+<div class="parking-container">
+  <h2 class="parking-title"> Available Parking Spots</h2>
+
+  <ul class="parking-list">
+    <li *ngFor="let spot of parkingSpots" class="parking-item">
+      <div class="spot-info">
+        <span class="spot-location"> {{ spot.location }}</span>
+        <span class="spot-type"> {{ spot.vehicleType }}</span>
+        <span class="spot-rate">{{ spot.rate.perHour }}/hr</span>
+      </div>
+    </li>
+  </ul>
+</div>
